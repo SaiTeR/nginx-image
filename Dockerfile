@@ -27,7 +27,8 @@ RUN chmod +x /var/www/nginx_serv/get_cpu_usage.sh && \
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
-EXPOSE ${PORT}
+EXPOSE 80
+EXPOSE 443
 
 CMD ["/entrypoint.sh"]
 
