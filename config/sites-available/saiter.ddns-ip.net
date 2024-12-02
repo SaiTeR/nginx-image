@@ -46,7 +46,7 @@ server {
 
 
     location /info.php {
-        proxy_pass ${FEDORA_IP}:${FEDORA_PORT};
+        proxy_pass http://${FEDORA_IP}:${FEDORA_PORT};
     }
 
     location /secondserver {
